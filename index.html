@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CIS Global Infratech - ID Card Generator</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!--==========================
+            LEFT PANEL
+    ===========================-->
+
+    <div class="form-panel">
+
+        <h2>Employee Details</h2>
+
+        <label>Photo</label>
+
+        <input type="file" id="photoInput">
+
+        <label>Name</label>
+
+        <input type="text" id="name">
+
+        <label>ID Number</label>
+
+        <input type="text" id="idno">
+
+        <label>Designation</label>
+
+        <input type="text" id="designation">
+
+        <label>Issue Date</label>
+
+        <input type="date" id="issueDate">
+
+        <label>Mobile Number</label>
+
+        <input type="text" id="mobile">
+
+        <label>Employee Address</label>
+
+        <textarea id="address" rows="5"></textarea>
+
+        <div class="btns">
+
+            <button id="printBtn">
+                Print
+            </button>
+
+            <button id="pdfBtn">
+                Download PDF
+            </button>
+
+        </div>
+
+    </div>
+
+    <!--==========================
+          PREVIEW PANEL
+    ===========================-->
+
+    <div class="preview">
+
+        <h2>Preview</h2>
+
+        <!--================ FRONT =================-->
+
+        <div class="front-card" id="frontCard">
+
+            <div class="header">
+
+                <img
+                src="images/logo.png"
+                class="logo">
+
+                <div class="company">
+
+                    <h1>CIS</h1>
+
+                    <h2>Global Infratech Pvt. Ltd.</h2>
+
+                </div>
+
+            </div>
+
+            <div class="photo">
+
+                <img
+
+                src="images/default-user.png"
+
+                id="previewPhoto">
+
+            </div>
+
+            <div class="details">
+
+                <div class="item">
+
+                    <span>Name</span>
+
+                    <span>:</span>
+
+                    <span id="previewName">
+
+                        Employee Name
+
+                    </span>
+
+                </div>
+
+                <div class="item">
+
+                    <span>ID No</span>
+
+                    <span>:</span>
+
+                    <span id="previewID">
+
+                        CIS/001
+
+                    </span>
+
+                </div>
+
+                <div class="item">
+
+                    <span>Designation</span>
+
+                    <span>:</span>
+
+                    <span id="previewDesignation">
+
+                        Technician
+
+                    </span>
+
+                </div>
+
+                <div class="item">
+
+                    <span>Issue Date</span>
+
+                    <span>:</span>
+
+                    <span id="previewIssue">
+
+                        15-07-2026
+
+                    </span>
+
+                </div>
+
+                <div class="item">
+
+                    <span>Mobile No</span>
+
+                    <span>:</span>
+
+                    <span id="previewMobile">
+
+                        9876543210
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="site">
+
+                <b>Site :</b>
+
+                Indian Oil Institute of Petroleum Management,
+
+                Gurgaon
+
+            </div>
+
+        </div>
+
+        <!--================ BACK =================-->
+
+        <div class="back-card" id="backCard">
+
+            <div class="address">
+
+                <h3>Address :</h3>
+
+                <p id="previewAddress">
+
+                    Employee Address
+
+                </p>
+
+            </div>
+
+            <div class="office">
+
+                <h3>Office Address :</h3>
+
+                <p>
+
+218, U.S. Complex
+
+Main Mathura Road
+
+Near Jasola Apollo Metro Station
+
+Opp. Apollo Hospital
+
+Delhi-110076
+
+                </p>
+
+                <h4>
+
+Contact No :
+
++91-7042941100
+
+                </h4>
+
+            </div>
+
+            <div class="siteAddress">
+
+                <h3>Site Address :</h3>
+
+                <p>
+
+IIPM (IOCL)
+
+Plot No.83
+
+Sector-18
+
+Gurgaon
+
+Haryana-122001
+
+                </p>
+
+            </div>
+
+            <div class="footer">
+
+                <img
+
+                src="images/stamp.png"
+
+                class="stamp">
+
+     
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

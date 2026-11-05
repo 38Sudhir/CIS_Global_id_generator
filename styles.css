@@ -1,0 +1,345 @@
+/* ==========================
+   GENERAL
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef3f7;
+    padding:30px;
+}
+
+.container{
+    display:flex;
+    gap:40px;
+}
+
+/* ==========================
+   FORM PANEL
+========================== */
+
+.form-panel{
+
+    width:330px;
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.form-panel h2{
+
+    text-align:center;
+    color:#138d96;
+    margin-bottom:20px;
+
+}
+
+.form-panel label{
+
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:bold;
+
+}
+
+.form-panel input,
+.form-panel textarea{
+
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    outline:none;
+
+}
+
+.btns{
+
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+
+}
+
+.btns button{
+
+    width:48%;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+    background:#138d96;
+    color:#fff;
+    cursor:pointer;
+    font-weight:bold;
+
+}
+
+.preview{
+
+    flex:1;
+
+}
+
+.preview h2{
+
+    text-align:center;
+    color:#138d96;
+    margin-bottom:20px;
+
+}
+
+/* ==========================
+   FRONT CARD
+========================== */
+
+.front-card{
+
+    position:relative;
+
+    width:340px;
+
+    height:545px;
+
+    background:#fff;
+
+    margin:auto;
+
+    border:1px solid #d8d8d8;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+.header{
+
+    display:flex;
+
+    align-items:center;
+
+    padding:15px 15px 0 15px;
+
+}
+
+.logo{
+
+    width:60px;
+
+    height:60px;
+
+    object-fit:contain;
+
+}
+
+.company{
+
+    margin-left:12px;
+
+}
+
+.company h1{
+
+    font-size:32px;
+
+    color:#1395a0;
+
+    letter-spacing:2px;
+
+    line-height:28px;
+
+}
+
+.company h2{
+
+    font-size:18px;
+
+    color:#1395a0;
+
+    font-weight:bold;
+
+    margin-top:2px;
+
+}
+
+/* ==========================
+   PHOTO
+========================== */
+
+.photo{
+
+    width:145px;
+
+    height:180px;
+
+    margin:18px auto;
+
+    border:3px solid #1598a3;
+
+    padding:3px;
+
+}
+
+.photo img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+/* ==========================
+   DETAILS
+========================== */
+
+.details{
+
+    width:92%;
+
+    margin:18px auto 0;
+
+}
+
+.item{
+
+    display:grid;
+
+    grid-template-columns:110px 15px 1fr;
+
+    margin-bottom:9px;
+
+    font-size:16px;
+
+}
+
+.item span:first-child{
+
+    font-weight:bold;
+
+}
+
+.item span:last-child{
+
+    word-break:break-word;
+
+}
+
+/* ==========================
+   DIVIDER
+========================== */
+
+.divider{
+
+    width:92%;
+
+    height:2px;
+
+    background:#1598a3;
+
+    margin:18px auto 12px;
+
+}
+
+/* ==========================
+   SITE
+========================== */
+
+.site{
+
+    width:92%;
+
+    margin:auto;
+
+    color:#1598a3;
+
+    font-size:14px;
+
+    line-height:20px;
+
+    font-weight:600;
+
+}
+
+/* ==========================
+   BACK CARD
+========================== */
+
+.back-card{
+
+    width:340px;
+
+    height:545px;
+
+    background:#fff;
+
+    margin:30px auto;
+
+    border:1px solid #d8d8d8;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    padding:18px;
+
+}
+
+.back-card h3{
+
+    font-size:18px;
+
+    margin-bottom:5px;
+
+}
+
+.back-card p{
+
+    font-size:14px;
+
+    line-height:21px;
+
+}
+
+.office{
+
+    margin-top:20px;
+
+}
+
+.siteAddress{
+
+    margin-top:20px;
+
+}
+
+.footer{
+
+    margin-top:35px;
+
+    text-align:center;
+
+}
+
+.stamp{
+
+    width:95px;
+
+}
+
+.footer p{
+
+    margin-top:5px;
+
+    font-weight:bold;
+
+}
